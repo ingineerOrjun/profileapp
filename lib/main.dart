@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:profileapp/home_page.dart';
 
 void main() {
-  runApp(MaterialApp(
-    title: "profile app",
-    home: Scaffold(
-      // ignore: prefer_const_constructors
-      appBar: AppBar(title: Text('My profile app')),
-    ),
-  ));
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Homepage(),
+    );
+  }
 }
